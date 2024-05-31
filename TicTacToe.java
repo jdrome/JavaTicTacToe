@@ -3,7 +3,7 @@ import java.awt.event.*;
 import java.util.*;
 import javax.swing.*;
 
-class TicTacToe implements ActionListener{
+public class TicTacToe implements ActionListener{
 
     // Class Attributes
     Random random = new Random();
@@ -33,6 +33,8 @@ class TicTacToe implements ActionListener{
 
         titlePanel.add(textField);
         frame.add(titlePanel);
+
+        frame.setVisible(true);
     }
 
     @Override
