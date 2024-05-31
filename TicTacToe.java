@@ -15,6 +15,10 @@ class TicTacToe implements ActionListener{
     }
 
     public void firstTurn(){
+
+    }
+
+    public void check(){
         
     }
 }
