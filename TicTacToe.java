@@ -27,6 +27,12 @@ class TicTacToe implements ActionListener{
         textField.setHorizontalAlignment(JLabel.CENTER);
         textField.setText("Tic-Tac-Toe");
         textField.setOpaque(true);
+
+        titlePanel.setLayout(new BorderLayout());
+        titlePanel.setBounds(0, 0, 800, 100); // titlePanel location in frame
+
+        titlePanel.add(textField);
+        frame.add(titlePanel);
     }
 
     @Override
