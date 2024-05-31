@@ -22,7 +22,11 @@ class TicTacToe implements ActionListener{
 
     }
 
-    public void xWins(){
-        
+    public void xWins(int a, int b, int c){
+
+    }
+
+    public void oWins(int a, int b, int c){
+
     }
 }
