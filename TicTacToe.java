@@ -5,6 +5,15 @@ import javax.swing.*;
 
 class TicTacToe implements ActionListener{
 
+    // Class Attributes
+    Random random = new Random();
+    JFrame frame = new JFrame();
+    JPanel titlePanel = new JPanel();
+    JPanel buttonPannel = new JPanel();
+    JLabel textField = new JLabel();
+    JButton[] buttons = new JButton[9];
+    boolean player1_turn;
+
     TicTacToe(){
 
     }
