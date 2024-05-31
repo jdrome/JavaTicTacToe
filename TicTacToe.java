@@ -3,6 +3,14 @@ import java.awt.event.*;
 import java.util.*;
 import javax.swing.*;
 
-class TicTacToe{
+class TicTacToe implements ActionListener{
 
+    TicTacToe(){
+
+    }
+
+    @Override
+    public void actionPerformed(ActionEvent e){
+
+    }
 }
