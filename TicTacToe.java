@@ -32,7 +32,7 @@ public class TicTacToe implements ActionListener{
         titlePanel.setBounds(0, 0, 800, 100); // titlePanel location in frame
 
         titlePanel.add(textField);
-        frame.add(titlePanel);
+        frame.add(titlePanel, BorderLayout.NORTH);
 
         frame.setVisible(true);
     }
