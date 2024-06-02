@@ -31,6 +31,9 @@ public class TicTacToe implements ActionListener{
         titlePanel.setLayout(new BorderLayout());
         titlePanel.setBounds(0, 0, 800, 100); // titlePanel location in frame
 
+        buttonPannel.setLayout(new GridLayout(3, 3));
+        buttonPannel.setBackground(new Color (150, 150, 150));
+
         titlePanel.add(textField);
         frame.add(titlePanel, BorderLayout.NORTH);
 
