@@ -16,11 +16,13 @@ public class TicTacToe implements ActionListener{
 
     // Constructor
     TicTacToe(){
+        // Defines scale and style of frame JFrame
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(800, 800);
         frame.getContentPane().setBackground(new Color(50,50,50));
         frame.setLayout(new BorderLayout());
 
+        // Defines scale and style of textField JLabel - this is essentially the title of the gameboard
         textField.setBackground(new Color(25, 25, 25));
         textField.setForeground(new Color(25, 255, 0));
         textField.setFont(new Font("Noteworthy", Font.BOLD,75));
@@ -34,6 +36,7 @@ public class TicTacToe implements ActionListener{
         buttonPanel.setLayout(new GridLayout(3, 3));
         buttonPanel.setBackground(new Color (150, 150, 150));
 
+        // Create and add buttons JButton to buttonPanel
         for(int i = 0; i < 9; i++){
             buttons[i] = new JButton();
             buttonPanel.add(buttons[i]);
