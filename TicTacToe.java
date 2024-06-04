@@ -36,6 +36,7 @@ public class TicTacToe implements ActionListener{
 
         titlePanel.add(textField);
         frame.add(titlePanel, BorderLayout.NORTH);
+        frame.add(buttonPannel);
 
         frame.setVisible(true); // This allows us to see the board when running the code.
     }
