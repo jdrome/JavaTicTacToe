@@ -9,7 +9,7 @@ public class TicTacToe implements ActionListener{
     Random random = new Random();
     JFrame frame = new JFrame(); // This JFrame will hold our game board
     JPanel titlePanel = new JPanel();
-    JPanel buttonPannel = new JPanel();
+    JPanel buttonPanel = new JPanel();
     JLabel textField = new JLabel();
     JButton[] buttons = new JButton[9];
     boolean player1_turn;
@@ -31,12 +31,18 @@ public class TicTacToe implements ActionListener{
         titlePanel.setLayout(new BorderLayout());
         titlePanel.setBounds(0, 0, 800, 100); // titlePanel location in frame
 
-        buttonPannel.setLayout(new GridLayout(3, 3));
-        buttonPannel.setBackground(new Color (150, 150, 150));
+        buttonPanel.setLayout(new GridLayout(3, 3));
+        buttonPanel.setBackground(new Color (150, 150, 150));
+
+        for(int i = 0; i < 9; i++){
+            buttons[i] = new JButton();
+            buttonPanel.add(buttons[i]);
+            buttons[i].setFont(new Font("Noteworthy", Font.BOLD,120));
+        }
 
         titlePanel.add(textField);
         frame.add(titlePanel, BorderLayout.NORTH);
-        frame.add(buttonPannel);
+        frame.add(buttonPanel);
 
         frame.setVisible(true); // This allows us to see the board when running the code.
     }
