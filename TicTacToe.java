@@ -68,7 +68,7 @@ public class TicTacToe implements ActionListener{
         }
         else {
             player1Turn = false;
-            textField.setText("O turn");
+            textField.setText("O's turn");
         }
     }
 
