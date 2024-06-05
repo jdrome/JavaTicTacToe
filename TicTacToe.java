@@ -65,7 +65,8 @@ public class TicTacToe implements ActionListener{
     public void firstTurn(){
         try{
             Thread.sleep(2000); // Game title will display for 2 seconds, then the player's turn will display
-        } catch (InterruptedException e) {
+        } 
+        catch (InterruptedException e) {
             e.printStackTrace();
         }
         
