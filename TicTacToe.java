@@ -61,6 +61,7 @@ public class TicTacToe implements ActionListener{
 
     }
 
+    // Randomly selects which player (X or O) will start the game
     public void firstTurn(){
         try{
             Thread.sleep(2000); // Game title will display for 2 seconds, then the player's turn will display
