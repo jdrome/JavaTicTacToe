@@ -30,9 +30,11 @@ public class TicTacToe implements ActionListener{
         textField.setText("Tic-Tac-Toe");
         textField.setOpaque(true);
 
+        // Location and layout for titlePanel
         titlePanel.setLayout(new BorderLayout());
         titlePanel.setBounds(0, 0, 800, 100); // titlePanel location in frame
 
+        // Location and layout for buttonPanel
         buttonPanel.setLayout(new GridLayout(3, 3));
         buttonPanel.setBackground(new Color (150, 150, 150));
 
