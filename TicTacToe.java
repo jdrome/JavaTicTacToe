@@ -51,9 +51,9 @@ public class TicTacToe implements ActionListener{
         frame.add(titlePanel, BorderLayout.NORTH);
         frame.add(buttonPanel);
 
-        firstTurn();
-
         frame.setVisible(true); // This allows us to see the board when running the code.
+
+        firstTurn();
     } // End of constructor
 
     @Override
@@ -62,6 +62,12 @@ public class TicTacToe implements ActionListener{
     }
 
     public void firstTurn(){
+        try{
+            Thread.sleep(2000); // Game title will display for 2 seconds, then the player's turn will display
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        
         if(random.nextInt(2) == 0) {
             player1Turn = true;
             textField.setText("X's turn");
