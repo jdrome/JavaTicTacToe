@@ -99,6 +99,7 @@ public class TicTacToe implements ActionListener{
         }
     }
 
+    // check() method checks when there is a winner
     public void check(){
 
     }
