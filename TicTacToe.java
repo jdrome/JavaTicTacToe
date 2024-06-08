@@ -104,6 +104,7 @@ public class TicTacToe implements ActionListener{
 
     }
 
+    // xWins() method will highlight which spots x won in
     public void xWins(int a, int b, int c){
 
     }
