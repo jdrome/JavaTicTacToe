@@ -164,6 +164,9 @@ public class TicTacToe implements ActionListener{
         ) {
             xWins(2, 4, 6);
         }
+        
+        // Check for O Winning Conditions
+
         // Row O Wins
         if(
             (buttons[0].getText() == "O") &&
