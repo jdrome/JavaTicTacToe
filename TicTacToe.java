@@ -47,6 +47,7 @@ public class TicTacToe implements ActionListener{
             buttons[i].addActionListener(this);
         }
 
+        // Add Components to Panel and Frame
         titlePanel.add(textField);
         frame.add(titlePanel, BorderLayout.NORTH);
         frame.add(buttonPanel);
