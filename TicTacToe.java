@@ -66,6 +66,7 @@ public class TicTacToe implements ActionListener{
                         buttons[i].setText("X");
                         player1Turn = false;
                         textField.setText("O turn");
+                        check();
                     }
                 }
                 else {
@@ -74,6 +75,7 @@ public class TicTacToe implements ActionListener{
                         buttons[i].setText("O");
                         player1Turn = true;
                         textField.setText("X turn");
+                        check();
                     }
                 }
             }
