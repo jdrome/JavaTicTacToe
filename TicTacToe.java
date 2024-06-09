@@ -103,6 +103,8 @@ public class TicTacToe implements ActionListener{
 
     // check() method checks when there is a winner
     public void check(){
+        // Check for X Winning Conditions
+
         // Row X Wins
         if(
             (buttons[0].getText() == "X") &&
