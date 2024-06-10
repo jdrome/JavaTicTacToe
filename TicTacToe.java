@@ -246,6 +246,7 @@ public class TicTacToe implements ActionListener{
         buttons[b].setBackground(Color.GREEN);
         buttons[c].setBackground(Color.GREEN);
 
+        // Disable buttons after player O wins
         for(int i = 0; i < 9; i++){
             buttons[i].setEnabled(false);
         }
