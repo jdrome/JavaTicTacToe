@@ -235,10 +235,16 @@ public class TicTacToe implements ActionListener{
         buttons[b].setBackground(Color.GREEN);
         buttons[c].setBackground(Color.GREEN);
 
+        // Sets new button color opacity to be true
+        buttons[a].setOpaque(true);
+        buttons[b].setOpaque(true);
+        buttons[c].setOpaque(true);
+        
         // Disable buttons after player X wins
         for(int i = 0; i < 9; i++){
             buttons[i].setEnabled(false);
         }
+
         textField.setText("X Wins!");
     }
     // xWins() method will highlight which spots x won in
@@ -247,10 +253,16 @@ public class TicTacToe implements ActionListener{
         buttons[b].setBackground(Color.GREEN);
         buttons[c].setBackground(Color.GREEN);
 
+        // Sets new button color opacity to be true
+        buttons[a].setOpaque(true);
+        buttons[b].setOpaque(true);
+        buttons[c].setOpaque(true);
+
         // Disable buttons after player O wins
         for(int i = 0; i < 9; i++){
             buttons[i].setEnabled(false);
         }
+
         textField.setText("O Wins!");
     }
 }
