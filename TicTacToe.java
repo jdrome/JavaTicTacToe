@@ -41,6 +41,19 @@ public class TicTacToe implements ActionListener{
         buttonPanel.setLayout(new GridLayout(3, 3));
         buttonPanel.setBackground(new Color (150, 150, 150));
 
+        // Location and layout for resetButtonPanel
+        resetButtonPanel.setLayout(new BorderLayout());
+        resetButtonPanel.setBounds(0, 600, 800, 100);
+
+        // Configuration of resetButton
+        resetButton = new JButton();
+        resetButtonPanel.add(resetButton);
+        resetButton.setFont(new Font("Noteworthy", Font.BOLD, 75));
+        resetButton.setForeground(new Color(0, 0, 0));
+        resetButton.setText("Reset");
+        resetButton.setFocusable(false);
+        resetButton.addActionListener(this);
+
         // Create and add buttons JButton to buttonPanel
         for(int i = 0; i < 9; i++){
             buttons[i] = new JButton();
@@ -54,6 +67,8 @@ public class TicTacToe implements ActionListener{
         titlePanel.add(textField);
         frame.add(titlePanel, BorderLayout.NORTH);
         frame.add(buttonPanel);
+        resetButtonPanel.add(resetButton);
+        frame.add(resetButtonPanel, BorderLayout.SOUTH);
 
         frame.setVisible(true); // This allows us to see the board when running the code.
 
