@@ -19,6 +19,15 @@ public class TicTacToe implements ActionListener{
 
     // Constructor
     TicTacToe(){
+        // Change UI look and feel to match cross-platform look and feel
+        // This will allow us to change the look and feel of JButtons and have them 
+        // match the look and feel of the rest of the OS.
+        try{
+            UIManager.setLookAndFeel(UIManager.getCrossPlatformLookAndFeelClassName());
+          }catch(Exception e){
+           e.printStackTrace(); 
+          }
+        
         // Defines scale and style of frame JFrame
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(800, 800);
@@ -49,7 +58,9 @@ public class TicTacToe implements ActionListener{
         resetButton = new JButton();
         resetButtonPanel.add(resetButton);
         resetButton.setFont(new Font("Noteworthy", Font.BOLD, 75));
-        resetButton.setForeground(new Color(0, 0, 0));
+        resetButton.setForeground(new Color(255, 255, 255));
+        resetButton.setBackground(Color.RED);
+        resetButton.setOpaque(true);
         resetButton.setText("Reset");
         resetButton.setFocusable(false);
         resetButton.addActionListener(this);
