@@ -247,7 +247,7 @@ public class TicTacToe implements ActionListener{
 
         textField.setText("X Wins!");
     }
-    // xWins() method will highlight which spots x won in
+    // 0Wins() method will highlight which spots x won in
     public void oWins(int a, int b, int c){
         buttons[a].setBackground(Color.GREEN);
         buttons[b].setBackground(Color.GREEN);
