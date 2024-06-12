@@ -11,6 +11,7 @@ public class TicTacToe implements ActionListener{
     JFrame frame = new JFrame(); // This JFrame will hold our game board
     JPanel titlePanel = new JPanel();
     JPanel buttonPanel = new JPanel();
+    JPanel resetButtonPanel = new JPanel();
     JLabel textField = new JLabel();
     JButton[] buttons = new JButton[9];
     JButton resetButton = new JButton();
