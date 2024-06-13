@@ -298,6 +298,7 @@ public class TicTacToe implements ActionListener{
         textField.setText("O Wins!");
     }
     
+    // Method for resetting game
     public void resetGame() {
         for (int i = 0; i < 9; i++) {
             buttons[i].setText("");
