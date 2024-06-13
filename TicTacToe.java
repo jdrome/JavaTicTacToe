@@ -1,3 +1,4 @@
+// Imports
 import java.awt.*;
 import java.awt.event.*;
 import java.util.*;
@@ -10,12 +11,23 @@ public class TicTacToe implements ActionListener{
     JFrame frame = new JFrame(); // This JFrame will hold our game board
     JPanel titlePanel = new JPanel();
     JPanel buttonPanel = new JPanel();
+    JPanel resetButtonPanel = new JPanel();
     JLabel textField = new JLabel();
     JButton[] buttons = new JButton[9];
+    JButton resetButton = new JButton();
     boolean player1Turn;
 
     // Constructor
     TicTacToe(){
+        // Change UI look and feel to match cross-platform look and feel
+        // This will allow us to change the look and feel of JButtons and have them 
+        // match the look and feel of the rest of the OS.
+        try{
+            UIManager.setLookAndFeel(UIManager.getCrossPlatformLookAndFeelClassName());
+          }catch(Exception e){
+           e.printStackTrace(); 
+          }
+        
         // Defines scale and style of frame JFrame
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(800, 800);
@@ -38,6 +50,21 @@ public class TicTacToe implements ActionListener{
         buttonPanel.setLayout(new GridLayout(3, 3));
         buttonPanel.setBackground(new Color (150, 150, 150));
 
+        // Location and layout for resetButtonPanel
+        resetButtonPanel.setLayout(new BorderLayout());
+        resetButtonPanel.setBounds(0, 600, 800, 100);
+
+        // Configuration of resetButton
+        resetButton = new JButton();
+        resetButtonPanel.add(resetButton);
+        resetButton.setFont(new Font("Noteworthy", Font.BOLD, 75));
+        resetButton.setForeground(new Color(255, 255, 255));
+        resetButton.setBackground(Color.RED);
+        resetButton.setOpaque(true);
+        resetButton.setText("Reset");
+        resetButton.setFocusable(false);
+        resetButton.addActionListener(this);
+
         // Create and add buttons JButton to buttonPanel
         for(int i = 0; i < 9; i++){
             buttons[i] = new JButton();
@@ -51,6 +78,8 @@ public class TicTacToe implements ActionListener{
         titlePanel.add(textField);
         frame.add(titlePanel, BorderLayout.NORTH);
         frame.add(buttonPanel);
+        resetButtonPanel.add(resetButton);
+        frame.add(resetButtonPanel, BorderLayout.SOUTH);
 
         frame.setVisible(true); // This allows us to see the board when running the code.
 
@@ -80,6 +109,9 @@ public class TicTacToe implements ActionListener{
                     }
                 }
             }
+        }
+        if (e.getSource() == resetButton) {
+            resetGame();
         }
     }
 
@@ -264,5 +296,15 @@ public class TicTacToe implements ActionListener{
         }
 
         textField.setText("O Wins!");
+    }
+    
+    public void resetGame() {
+        for (int i = 0; i < 9; i++) {
+            buttons[i].setText("");
+            buttons[i].setEnabled(true);
+            buttons[i].setBackground(new JButton().getBackground());
+        }
+        textField.setText("Tic-Tac-Toe");
+        firstTurn();
     }
 }
