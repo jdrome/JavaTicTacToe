@@ -5,7 +5,7 @@ import javax.swing.*;
 
 public class TicTacToe implements ActionListener{
 
-    // Class Attributes
+    // Class Attributes 
     Random random = new Random();
     JFrame frame = new JFrame(); // This JFrame will hold our game board
     JPanel titlePanel = new JPanel();
