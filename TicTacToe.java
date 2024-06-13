@@ -65,11 +65,12 @@ public class TicTacToe implements ActionListener{
         resetButton.setFocusable(false);
         resetButton.addActionListener(this);
 
-        // Create and add buttons JButton to buttonPanel
+        // Create and add X/O buttons to buttonPanel
         for(int i = 0; i < 9; i++){
             buttons[i] = new JButton();
             buttonPanel.add(buttons[i]);
             buttons[i].setFont(new Font("Noteworthy", Font.BOLD,120));
+            buttons[i].setBackground(new Color(25, 25, 25));
             buttons[i].setFocusable(false);
             buttons[i].addActionListener(this);
         }
@@ -110,6 +111,15 @@ public class TicTacToe implements ActionListener{
                 }
             }
         }
+        // Enables resetButton functionality
+        if (textField.getText() == "O wins!" || textField.getText() == "X wins!") {
+                if (e.getSource() == resetButton) {
+                    for (int i = 0; i < 9; i++) {
+                        buttons[i].setEnabled(true);
+                        buttons[i].setText("");
+                    }
+                }
+            }
     }
 
     // Randomly selects which player (X or O) will start the game
