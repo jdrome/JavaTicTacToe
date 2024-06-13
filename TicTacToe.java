@@ -88,6 +88,7 @@ public class TicTacToe implements ActionListener{
 
     @Override
     public void actionPerformed(ActionEvent e){
+        // Marks X or O depending on what player's turn it is
         for(int i = 0; i < 9; i++){
             if(e.getSource() == buttons[i]) {
                 if(player1Turn) {
@@ -110,6 +111,8 @@ public class TicTacToe implements ActionListener{
                 }
             }
         }
+
+        // Resets the game using resetGame() method
         if (e.getSource() == resetButton) {
             resetGame();
         }
@@ -297,7 +300,7 @@ public class TicTacToe implements ActionListener{
 
         textField.setText("O Wins!");
     }
-    
+
     // Method for resetting game
     public void resetGame() {
         for (int i = 0; i < 9; i++) {
