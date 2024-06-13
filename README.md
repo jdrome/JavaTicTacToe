@@ -4,9 +4,11 @@
 This is a simple TicTacToe game implemented in Java using Swing for the GUI. The game allows two players to take turns marking spaces in a 3x3 grid, with the objective of getting three of their marks in a row horizontally, vertically, or diagonally. Once a winner is decided, the winning characters are highlighted in green.
 
 ## Screenshots
-<img width="400" alt="Screenshot of Tic Tac Toe game board. A text field shows O's turn is next at the top" src="https://github.com/jdrome/JavaTicTacToe/assets/127639707/8f78e79f-d361-4e47-a174-4527f2ebce59">
+<img width="300" alt="Screenshot 2024-06-13 at 2 00 06 PM" src="https://github.com/jdrome/JavaTicTacToe/assets/127639707/9d246689-92d8-4cfa-af7d-404c8a17dfde">
 
-<img width="400" alt="Screenshot of Tic Tac Toe game board. Player O has won the game diagonally from left to right. A text field shows O wins at the top." src="https://github.com/jdrome/JavaTicTacToe/assets/127639707/77a85570-d9c8-4065-a220-e7c5897712e0">
+<img width="300" alt="Screenshot 2024-06-13 at 2 00 28 PM" src="https://github.com/jdrome/JavaTicTacToe/assets/127639707/bdb6003e-7184-4d58-b977-e4adf2f272ba">
+
+<img width="300" alt="Screenshot 2024-06-13 at 2 00 44 PM" src="https://github.com/jdrome/JavaTicTacToe/assets/127639707/28c36fec-5448-41d5-b2da-4ef98757715c">
 
 
 ## Features
@@ -14,6 +16,7 @@ This is a simple TicTacToe game implemented in Java using Swing for the GUI. The
 - Graphical user interface using Swing
 - Randomized first turn
 - Visual indication of the winning line
+- Reset button to restart game
 
 ## File Structure
 The project consists of the following files:
@@ -64,10 +67,10 @@ The project consists of the following files:
 2. The game will randomly decide which player goes first.
 3. Players take turns clicking on the buttons to place their marks.
 4. The first player to get three of their marks in a row wins, and the winning line is highlighted.
+5. Once players want to restart the game, they can hit the reset button on the bottom of the board at any time, and the game will begin anew. 
 
 ## Upcoming Features
-1. A button users can push to reset the game after a game has ended.
-2. A message that appears once a game is ended in a draw with no winner. 
+1. A message that appears once a game is ended in a draw with no winner. 
 
 ## License
 This project is licensed under the MIT License. See the license.txt file for more details.
