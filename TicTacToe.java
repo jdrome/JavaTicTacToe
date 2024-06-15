@@ -263,6 +263,21 @@ public class TicTacToe implements ActionListener{
         ) {
             oWins(2, 4, 6);
         }
+
+        // Draw - no winner
+        if(
+            (buttons[0].getText() != "") &&
+            (buttons[1].getText() != "") &&
+            (buttons[2].getText() != "") &&
+            (buttons[3].getText() != "") &&
+            (buttons[4].getText() != "") &&
+            (buttons[5].getText() != "") &&
+            (buttons[6].getText() != "") &&
+            (buttons[7].getText() != "") &&
+            (buttons[8].getText() != "")
+        ) {
+            textField.setText("Tie!");
+        }
     }
 
     // xWins() method will highlight which spots x won in
