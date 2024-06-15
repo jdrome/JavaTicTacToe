@@ -16,6 +16,7 @@ This is a simple TicTacToe game implemented in Java using Swing for the GUI. The
 - Graphical user interface using Swing
 - Randomized first turn
 - Visual indication of the winning line
+- Textbox that communicates player's turn, winner, and when there is a tie
 - Reset button to restart game
 
 ## File Structure
@@ -68,9 +69,6 @@ The project consists of the following files:
 3. Players take turns clicking on the buttons to place their marks.
 4. The first player to get three of their marks in a row wins, and the winning line is highlighted.
 5. Once players want to restart the game, they can hit the reset button on the bottom of the board at any time, and the game will begin anew. 
-
-## Upcoming Features
-1. A message that appears once a game is ended in a draw with no winner. 
 
 ## License
 This project is licensed under the MIT License. See the license.txt file for more details.
