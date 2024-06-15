@@ -86,6 +86,7 @@ public class TicTacToe implements ActionListener{
         firstTurn();
     } // End of constructor
 
+    // actionPerformed method needed due to implementation of Action Listener interface
     @Override
     public void actionPerformed(ActionEvent e){
         // Marks X or O depending on what player's turn it is
