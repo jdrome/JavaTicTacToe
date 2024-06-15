@@ -164,6 +164,7 @@ public class TicTacToe implements ActionListener{
         ) {
             xWins(6, 7, 8);
         }
+        
         // Column X Wins
         if(
             (buttons[0].getText() == "X") &&
@@ -186,6 +187,7 @@ public class TicTacToe implements ActionListener{
         ) {
             xWins(2, 5, 8);
         }
+
         // Diagonal X Wins
         if(
             (buttons[0].getText() == "X") &&
@@ -226,6 +228,7 @@ public class TicTacToe implements ActionListener{
         ) {
             oWins(6, 7, 8);
         }
+
         // Column O Wins
         if(
             (buttons[0].getText() == "O") &&
@@ -248,6 +251,7 @@ public class TicTacToe implements ActionListener{
         ) {
             oWins(2, 5, 8);
         }
+
         // Diagonal O Wins
         if(
             (buttons[0].getText() == "O") &&
