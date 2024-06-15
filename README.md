@@ -36,7 +36,7 @@ The project consists of the following files:
 ### Installation
 1. Clone the repository to your local machine:
     ```sh
-    git clone https://github.com/yourusername/TicTacToe.git
+    git clone https://github.com/jdrome/JavaTicTacToe.git
     ```
 
 2. Navigate to the project directory:
