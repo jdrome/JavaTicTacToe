@@ -329,6 +329,6 @@ public class TicTacToe implements ActionListener{
             buttons[i].setBackground(new JButton().getBackground());
         }
         textField.setText("Tic-Tac-Toe");
-        firstTurn();
+        firstTurn(); // Randomly selects a new player to start the game
     }
 }
